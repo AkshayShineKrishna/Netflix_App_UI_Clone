@@ -23,8 +23,8 @@ class ApiEndPoints {
       '$baseUrl/discover/movie?api_key=$apiKey&with_genres=16';
   //custom api - gets upcoming movie details and logo
   static const upcomingMovie =
-      'https://cybertron.pythonanywhere.com/get_filepaths';
+      'https://cybertron.pythonanywhere.com/get_upcoming?api_key=$apiKey';
   //custom api - get popular movies detail and logos
   static const popularMovie =
-      'https://cybertron.pythonanywhere.com/get_popular';
+      'https://cybertron.pythonanywhere.com/get_popular?api_key=$apiKey';
 }
