@@ -10,3 +10,4 @@ const kButtonWhite = Colors.white;
 const kButtonBlack = Colors.black;
 const kBlackFont = Colors.black;
 const kGreyBackground = Colors.grey;
+const kRed = Colors.red;

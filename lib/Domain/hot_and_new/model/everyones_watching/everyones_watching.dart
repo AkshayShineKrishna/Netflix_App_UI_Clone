@@ -30,6 +30,8 @@ class EveryonesWatchingData {
   String? overview;
   @JsonKey(name: 'title')
   String? title;
+  @JsonKey(name: 'key')
+  String? key;
 
   EveryonesWatchingData({
     this.backdropPath,
@@ -38,6 +40,7 @@ class EveryonesWatchingData {
     this.originalTitle,
     this.overview,
     this.title,
+    this.key,
   });
 
   factory EveryonesWatchingData.fromJson(Map<String, dynamic> json) {

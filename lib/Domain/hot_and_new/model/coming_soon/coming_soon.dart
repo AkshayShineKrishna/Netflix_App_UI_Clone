@@ -37,6 +37,8 @@ class ComingSoonData {
   String? month;
   @JsonKey(name: 'day')
   String? day;
+  @JsonKey(name: 'key')
+  String? key;
 
   ComingSoonData({
     this.backdropPath,
@@ -48,6 +50,7 @@ class ComingSoonData {
     this.title,
     this.month,
     this.day,
+    this.key,
   });
 
   factory ComingSoonData.fromJson(Map<String, dynamic> json) {

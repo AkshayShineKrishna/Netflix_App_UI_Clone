@@ -47,6 +47,7 @@ dependencies:
   dartz: ^0.10.1
   get_it: ^7.6.0
   injectable: ^2.1.1
+  youtube_player_flutter: ^8.1.2
 
 dev_dependencies:
   flutter_test:

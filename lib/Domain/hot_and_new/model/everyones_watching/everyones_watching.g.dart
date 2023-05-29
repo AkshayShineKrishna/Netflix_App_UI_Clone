@@ -29,6 +29,7 @@ EveryonesWatchingData _$EveryonesWatchingDataFromJson(
       originalTitle: json['original_title'] as String?,
       overview: json['overview'] as String?,
       title: json['title'] as String?,
+      key: json['key'] as String?,
     );
 
 Map<String, dynamic> _$EveryonesWatchingDataToJson(
@@ -40,4 +41,5 @@ Map<String, dynamic> _$EveryonesWatchingDataToJson(
       'original_title': instance.originalTitle,
       'overview': instance.overview,
       'title': instance.title,
+      'key': instance.key,
     };

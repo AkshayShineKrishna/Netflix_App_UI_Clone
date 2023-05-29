@@ -29,6 +29,7 @@ ComingSoonData _$ComingSoonDataFromJson(Map<String, dynamic> json) =>
       title: json['title'] as String?,
       month: json['month'] as String?,
       day: json['day'] as String?,
+      key: json['key'] as String?,
     );
 
 Map<String, dynamic> _$ComingSoonDataToJson(ComingSoonData instance) =>
@@ -42,4 +43,5 @@ Map<String, dynamic> _$ComingSoonDataToJson(ComingSoonData instance) =>
       'title': instance.title,
       'month': instance.month,
       'day': instance.day,
+      'key': instance.key,
     };

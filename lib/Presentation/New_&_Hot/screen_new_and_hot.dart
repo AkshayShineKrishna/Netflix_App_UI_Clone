@@ -116,6 +116,7 @@ class ComingSoonListViewWidget extends StatelessWidget {
             itemBuilder: (ctx, index) {
               final movie = filteredList[index];
               return ComingSoonMovieWidget(
+                videoUrl: movie.key!,
                 imageUrl: '$imageAppendUrl${movie.backdropPath}',
                 overview: movie.overview ?? 'overview not available',
                 logoUrl: '$logoAppendUrl${movie.logoPath}',
@@ -160,6 +161,7 @@ class EveryOnesWatchingTabWidget extends StatelessWidget {
             itemBuilder: (ctx, index) {
               final movie = filteredList[index];
               return EveronesWtchingBodyWidget(
+                videoUrl: movie.key!,
                 size: size,
                 imageUrl: '$imageAppendUrl${movie.backdropPath}',
                 logoUrl: '$logoAppendUrl${movie.logoPath}',
@@ -177,12 +179,14 @@ class EveronesWtchingBodyWidget extends StatelessWidget {
   final String overview;
   final String logoUrl;
   final String imageUrl;
+  final String videoUrl;
   const EveronesWtchingBodyWidget({
     super.key,
     required this.size,
     required this.overview,
     required this.logoUrl,
     required this.imageUrl,
+    required this.videoUrl,
   });
 
   final Size size;
@@ -194,7 +198,13 @@ class EveronesWtchingBodyWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          VideoWidget(size: size, imageUrl: imageUrl),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: VideoWidget(
+              imageUrl: imageUrl,
+              videoUrl: videoUrl,
+            ),
+          ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
