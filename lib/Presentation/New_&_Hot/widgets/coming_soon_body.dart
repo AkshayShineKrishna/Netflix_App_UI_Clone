@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix/Core/Colors/colors.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 import '../../../Core/constants.dart';
 import 'custom_icon_widget.dart';
@@ -12,6 +13,7 @@ class ComingSoonMovieWidget extends StatelessWidget {
   final String logoUrl;
   final String month;
   final String day;
+  final String videoUrl;
   const ComingSoonMovieWidget({
     super.key,
     required this.imageUrl,
@@ -19,6 +21,7 @@ class ComingSoonMovieWidget extends StatelessWidget {
     required this.logoUrl,
     required this.month,
     required this.day,
+    required this.videoUrl,
   });
 
   @override
@@ -38,7 +41,14 @@ class ComingSoonMovieWidget extends StatelessWidget {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                VideoWidget(size: size, imageUrl: imageUrl),
+                Padding(
+                  padding:
+                      const EdgeInsets.only(bottom: 8.0, left: 4, right: 4),
+                  child: VideoWidget(
+                    imageUrl: imageUrl,
+                    videoUrl: videoUrl,
+                  ),
+                ),
                 MovieLogoAndIconsWidget(
                   size: size,
                   logoUrl: logoUrl,
@@ -85,46 +95,133 @@ class MovieDateWidget extends StatelessWidget {
   }
 }
 
-class VideoWidget extends StatelessWidget {
-  const VideoWidget({
-    super.key,
-    required this.size,
-    required this.imageUrl,
-  });
-
-  final Size size;
+class VideoWidget extends StatefulWidget {
+  final String videoUrl;
   final String imageUrl;
+
+  const VideoWidget({Key? key, required this.videoUrl, required this.imageUrl})
+      : super(key: key);
+
+  @override
+  State<VideoWidget> createState() => _VideoWidgetState();
+}
+
+class _VideoWidgetState extends State<VideoWidget> {
+  late YoutubePlayerController _controller;
+  bool isVideoLoaded = false;
+  bool isMuted = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = YoutubePlayerController(
+      initialVideoId: '',
+      flags: const YoutubePlayerFlags(
+        autoPlay: false,
+        mute: false,
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void loadVideo() {
+    _controller = YoutubePlayerController(
+      initialVideoId: YoutubePlayer.convertUrlToId(widget.videoUrl)!,
+      flags: const YoutubePlayerFlags(
+        autoPlay: false,
+        mute: false,
+        loop: true,
+      ),
+    );
+    setState(() {
+      isVideoLoaded = true;
+    });
+  }
+
+  void toggleMute() {
+    if (isMuted) {
+      setState(() {
+        isMuted = !isMuted;
+        _controller.unMute();
+      });
+    } else {
+      setState(() {
+        isMuted = !isMuted;
+        _controller.mute();
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            width: double.infinity,
-            height: size.width * 0.45,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                image: DecorationImage(
-                    image: NetworkImage(imageUrl), fit: BoxFit.cover)),
-          ),
-        ),
-        Positioned(
-          right: 15,
-          bottom: 15,
-          child: CircleAvatar(
-            radius: 20,
-            backgroundColor: kButtonBlack.withOpacity(0.8),
-            child: IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  CupertinoIcons.volume_off,
-                  color: kButtonWhite,
-                )),
-          ),
-        ),
-      ],
+    final size = MediaQuery.of(context).size;
+    return GestureDetector(
+      onTap: () {
+        if (!isVideoLoaded) {
+          loadVideo();
+        }
+      },
+      child: isVideoLoaded
+          ? Stack(
+              alignment: Alignment.bottomRight,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  width: double.infinity,
+                  height: size.width * 0.45,
+                  child: YoutubePlayer(
+                    controller: _controller,
+                    bottomActions: [
+                      CurrentPosition(),
+                      ProgressBar(
+                        colors: const ProgressBarColors(
+                            playedColor: kRed,
+                            handleColor: kRed,
+                            backgroundColor: kGreyBackground),
+                        isExpanded: true,
+                      ),
+                    ],
+                    thumbnail: Image.network(
+                      widget.imageUrl,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: CircleAvatar(
+                    radius: 14,
+                    backgroundColor: Colors.black.withOpacity(0.5),
+                    child: Center(
+                      child: IconButton(
+                        alignment: Alignment.center,
+                        iconSize: 12,
+                        color: Colors.white,
+                        icon: Icon(isMuted
+                            ? CupertinoIcons.volume_off
+                            : CupertinoIcons.volume_up),
+                        onPressed: toggleMute,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            )
+          : Container(
+              width: double.infinity,
+              height: size.width * 0.45,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  image: DecorationImage(
+                      image: NetworkImage(widget.imageUrl),
+                      fit: BoxFit.cover))),
     );
   }
 }
