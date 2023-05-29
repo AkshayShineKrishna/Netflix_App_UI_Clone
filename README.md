@@ -8,15 +8,13 @@ By exploring the Netflix UI Clone repository, developers can gain insights into 
 
 Please note that this repository is intended for educational and personal use, and it is not affiliated with or endorsed by Netflix or TMDB.
 
-## Getting Started
+## Tech Stack
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+💻 Flutter: a powerful and flexible framework for building beautiful and performant user interfaces across multiple platforms. 
+🎯 Dart: the programming language used in combination with Flutter to create the logic and functionality of the Netflix UI Clone. 
+🐍 Python: a versatile programming language used for backend development. 
+🌐 Flask: a lightweight web framework in Python used to create the API endpoints and handle requests. 
+🎥 TMDB API: the primary source of data for movie and TV show information. 
+🚀 Custom Python API: a custom-built API in Python that combines and processes the results of the TMDB APIs, providing additional functionality not directly available from TMDB. 
+🗂️ Git: version control system for tracking changes and collaborating with others. 
+🌐 GitHub: hosting platform for managing and sharing the repository. 
