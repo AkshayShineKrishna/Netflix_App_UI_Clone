@@ -10,11 +10,11 @@ Please note that this repository is intended for educational and personal use, a
 
 ## Tech Stack
 
-💻 Flutter: a powerful and flexible framework for building beautiful and performant user interfaces across multiple platforms. 
-🎯 Dart: the programming language used in combination with Flutter to create the logic and functionality of the Netflix UI Clone. 
-🐍 Python: a versatile programming language used for backend development. 
-🌐 Flask: a lightweight web framework in Python used to create the API endpoints and handle requests. 
-🎥 TMDB API: the primary source of data for movie and TV show information. 
-🚀 Custom Python API: a custom-built API in Python that combines and processes the results of the TMDB APIs, providing additional functionality not directly available from TMDB. 
-🗂️ Git: version control system for tracking changes and collaborating with others. 
-🌐 GitHub: hosting platform for managing and sharing the repository. 
+- 💻 Flutter: a powerful and flexible framework for building beautiful and performant user interfaces across multiple platforms.
+- 🎯 Dart: the programming language used in combination with Flutter to create the logic and functionality of the Netflix UI Clone.
+- 🐍 Python: a versatile programming language used for backend development.
+- 🌐 Flask: a lightweight web framework in Python used to create the API endpoints and handle requests.
+- 🎥 TMDB API: the primary source of data for movie and TV show information.
+- 🚀 Custom Python API: a custom-built API in Python that combines and processes the results of the TMDB APIs, providing additional functionality not directly available from TMDB.
+- 🗂️ Git: version control system for tracking changes and collaborating with others.
+- 🌐 GitHub: hosting platform for managing and sharing the repository.
