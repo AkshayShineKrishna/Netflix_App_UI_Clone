@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/Presentation/Downloads/screen_downloads.dart';
-import 'package:netflix/Presentation/Fast_Laughs/screen_fast_laughs.dart';
 import 'package:netflix/Presentation/Home/screen_home.dart';
 import 'package:netflix/Presentation/Main_page/widgets/bottom_nav.dart';
 import 'package:netflix/Presentation/New_&_Hot/screen_new_and_hot.dart';
@@ -12,7 +11,6 @@ class ScreenMainPage extends StatelessWidget {
   final _pages = [
     const ScreenHome(),
     const ScreenNewAndHot(),
-    const ScreenFastLaughs(),
     const ScreenSearch(),
     ScreenDownloads(),
   ];

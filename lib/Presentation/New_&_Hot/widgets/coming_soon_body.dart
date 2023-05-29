@@ -133,7 +133,7 @@ class _VideoWidgetState extends State<VideoWidget> {
     _controller = YoutubePlayerController(
       initialVideoId: YoutubePlayer.convertUrlToId(widget.videoUrl)!,
       flags: const YoutubePlayerFlags(
-        autoPlay: false,
+        autoPlay: true,
         mute: false,
         loop: true,
       ),
@@ -214,22 +214,29 @@ class _VideoWidgetState extends State<VideoWidget> {
                 )
               ],
             )
-          : Stack(
-              alignment: Alignment.center,
-              children: [
-                Container(
-                    width: double.infinity,
-                    height: size.width * 0.45,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                        image: DecorationImage(
-                            image: NetworkImage(widget.imageUrl),
-                            fit: BoxFit.cover))),
-                const Icon(
-                  Icons.play_arrow_rounded,
-                  size: 50,
-                )
-              ],
+          : GestureDetector(
+              onTap: () {
+                if (!isVideoLoaded) {
+                  loadVideo();
+                }
+              },
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Container(
+                      width: double.infinity,
+                      height: size.width * 0.45,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          image: DecorationImage(
+                              image: NetworkImage(widget.imageUrl),
+                              fit: BoxFit.cover))),
+                  const Icon(
+                    Icons.play_arrow_rounded,
+                    size: 50,
+                  )
+                ],
+              ),
             ),
     );
   }
