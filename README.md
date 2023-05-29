@@ -6,7 +6,7 @@ The clone utilizes data from TMDB's API to fetch and display movie and TV show i
 
 By exploring the Netflix UI Clone repository, developers can gain insights into the integration of external APIs, UI design patterns, state management, and more, all within the context of a real-world application. It provides a hands-on opportunity to learn and practice Flutter development while building a high-fidelity clone of the Netflix interface.
 
-Please note that this repository is intended for educational and personal use, and it is not affiliated with or endorsed by Netflix or TMDB."
+Please note that this repository is intended for educational and personal use, and it is not affiliated with or endorsed by Netflix or TMDB.
 
 ## Getting Started
 
