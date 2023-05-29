@@ -214,14 +214,23 @@ class _VideoWidgetState extends State<VideoWidget> {
                 )
               ],
             )
-          : Container(
-              width: double.infinity,
-              height: size.width * 0.45,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  image: DecorationImage(
-                      image: NetworkImage(widget.imageUrl),
-                      fit: BoxFit.cover))),
+          : Stack(
+              alignment: Alignment.center,
+              children: [
+                Container(
+                    width: double.infinity,
+                    height: size.width * 0.45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        image: DecorationImage(
+                            image: NetworkImage(widget.imageUrl),
+                            fit: BoxFit.cover))),
+                const Icon(
+                  Icons.play_arrow_rounded,
+                  size: 50,
+                )
+              ],
+            ),
     );
   }
 }
