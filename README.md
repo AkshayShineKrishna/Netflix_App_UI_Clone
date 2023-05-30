@@ -44,8 +44,8 @@ More features coming soon ⚡
 
 ### Prerequisites
 
-- Flutter SDK: Make sure you have Flutter installed on your machine. You can download and install Flutter from the official Flutter website.
-- Flutter IDE: Choose an IDE for Flutter development such as Android Studio, Visual Studio Code, or IntelliJ IDEA. Install the required plugins/extensions for Flutter development in your chosen IDE.
+- Flutter SDK: Make sure you have Flutter installed on your machine. You can download and install Flutter from the official [Flutter](https://flutter.dev/) website.
+- Flutter IDE: Choose an IDE for Flutter development such as [Android Studio](https://developer.android.com/studio), [Visual Studio Code](https://code.visualstudio.com/), or any other IDE of your choice. Install the required plugins/extensions for Flutter development in your chosen IDE.
 - TMDB API Key: Create your own API key from the TMDB website. The API key is required to fetch movie and TV show data. Follow the steps below to generate your TMDB API key.
 
 ### Generating TMDB API Key
