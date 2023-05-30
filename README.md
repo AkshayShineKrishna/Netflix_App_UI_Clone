@@ -94,7 +94,7 @@ This command will build and run the app on your connected device or emulator.
 
 ## Folder Structure
 
-1. **Application**: It is divided into subfolders for each screen (downloads, home, hot_and_new, search), and each subfolder contains the corresponding bloc files (*_bloc.dart) , (*_state.dart) and event files (*_events.dart).
+1. **Application**: It is divided into subfolders for each screen (`downloads`, `home`, `hot_and_new`, `search`), and each subfolder contains the corresponding bloc files (*_bloc.dart) , (*_state.dart) and event files (*_events.dart).
 
 2. **Core** : Holds essential core components and configurations of the application. It includes:
   - Colors : Contains the colors.dart file that defines constant theme colors used throughout the app.
