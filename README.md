@@ -23,6 +23,23 @@ Please note that this repository is intended for educational and personal use, a
 ## Screenshots
 <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/1.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/2.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/3.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/4.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/5.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/6.png" width="32%">
 
+## Features
+**Browse Movies and TV Shows**: Explore a wide range of movies and TV shows available on various platforms. View details such as title, overview, rating, release date, and poster.
+
+**Search Functionality** : Search for specific movies and TV shows using keywords. Get instant search results with matching titles and posters.
+
+**Category Filtering** : Filter movies and TV shows by categories such as popular, top-rated, trending, and more. Discover new content based on different genres.
+
+**Player Integration** : Enjoy a seamless viewing experience with a built-in video player. Play trailers or teasers of upcoming and trending movies directly within the app.
+
+**Upcoming Movies** : Get a list of upcoming movies with their release dates, overviews, and posters. Watch the trailers or teasers of the upcoming movies.
+
+**Trending Movies and TV Shows** : Discover the latest trending movies and TV shows. Logos dynamically change depending upon the data received from the TMDB API. Play trailers or teasers of the trending movies.
+
+**Top 10 TV Shows Globally** : Access a curated list of the top 10 TV shows globally. View details such as title, overview, rating, and poster.
+
+More features coming soon ⚡
+
 ## Getting Started
 
 ### Prerequisites
@@ -139,4 +156,8 @@ This command will build and run the app on your connected device or emulator.
 
 Thank you for your interest in improving the project!  🎉
 
+## Acknowledgments
 
+The Netflix App UI Clone project is inspired by the original Netflix interface. We express our gratitude to Netflix and TMDB for providing the data and design inspiration that has made this project possible.
+
+Special thanks to the Flutter community for their continuous support, guidance, and contributions to the Flutter framework and ecosystem.
