@@ -116,6 +116,20 @@ This command will build and run the app on your connected device or emulator.
 
 6. main.dart: The entry point of the Flutter application.
 
+## Development Status and Limitations
+
+🚧 **Under Development**: This project is still under development and is suitable for beginner-level developers to explore Flutter and UI design principles.
+
+📱 **Limited Device Testing**: The app has been tested on a limited number of physical devices, so there may be variations in performance and compatibility across different devices.
+
+🔌 **Custom API Limitations**: The current custom API used in the project supports a limited number of users. If you encounter any issues related to data retrieval or connectivity, it may be due to the limitations of the custom API.
+
+📏 **Screen Variations**: Due to variations in device screen sizes and aspect ratios, there might be instances of pixel overflow or layout issues in certain devices.
+
+🔨 **Active Issue Resolution**: These issues are actively being addressed, and contributions from the community are welcome to help improve the app's responsiveness and compatibility.
+
+🔧 **Beta Branch Experimentation**: The beta branch of this repository is where experimental features and enhancements are being developed and tested. It may contain unstable code and features that are not yet merged into the main branch. Feel free to explore the beta branch and provide feedback or contribute to its development.
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request or open an issue in the GitHub repository.
