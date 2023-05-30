@@ -133,8 +133,10 @@ This command will build and run the app on your connected device or emulator.
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request or open an issue in the [GitHub repository](https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone).
+👋 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request or open an issue in the [GitHub repository](https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone).
 
-Please make sure to review and follow the [contribution guidelines](https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/CONTRIBUTING.md) before submitting your contribution.
+📝 Please make sure to review and follow the [contribution guidelines](https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/CONTRIBUTING.md) before submitting your contribution.
 
-Thank you for your interest in improving the project!
+Thank you for your interest in improving the project!  🎉
+
+
