@@ -92,6 +92,29 @@ flutter run
 ```
 This command will build and run the app on your connected device or emulator.
 
+## Folder Structure
+**Application**: Contains the business logic related to different screens of the application. It is divided into subfolders for each screen (downloads, home, hot_and_new, search), and each subfolder contains the corresponding bloc files (*_bloc.dart) and event files (*_events.dart).
+
+**Core**: Holds essential core components and configurations of the application. It includes:
+
+**Colors**: Contains the colors.dart file that defines constant theme colors used throughout the app.
+constants.dart: Stores constant values, such as spacing and sized box dimensions.
+di: Contains the injectable.dart file, which sets up dependency injection configurations for the app.
+strings.dart: Contains base URLs for API calls and network images.
+**Domain**: Represents the domain layer of the application and is organized based on each screen. It contains subfolders for each screen (downloads, home, hot_and_new, search), and each screen folder further includes:
+
+model: Contains the data models specific to that screen.
+services.dart: Holds the services related to that screen, such as API requests or data handling.
+Infrastructure: Contains the implementation details and repositories for each screen. It includes:
+
+api_key.dart: A file that users have to create (as mentioned in the instructions) to store their TMDB API key.
+Subfolders for each screen (downloads, home, hot_and_new, search), which contain the implementation of the repositories used by the services.
+**Presentation**: Responsible for the presentation layer of the application. It includes subfolders for each screen (downloads, home, hot_and_new, search). Each screen folder contains:
+
+widgets: Contains the specific widgets used by that screen.
+{screen_name}_screen.dart: The main Dart file for each screen, which defines the UI and handles user interactions.
+main.dart: The entry point of the Flutter application.
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request or open an issue in the GitHub repository.
