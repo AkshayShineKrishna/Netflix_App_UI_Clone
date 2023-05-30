@@ -19,3 +19,6 @@ Please note that this repository is intended for educational and personal use, a
 - 🚀 Custom Python API: a custom-built API in Python that combines and processes the results of the TMDB APIs, providing additional functionality not directly available from TMDB.
 - 🗂️ Git: version control system for tracking changes and collaborating with others.
 - 🌐 GitHub: hosting platform for managing and sharing the repository.
+
+## Screenshots
+<img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/1.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/2.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/3.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/4.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/5.png" width="32%"> <img src="https://github.com/AkshayShineKrishna/Netflix_App_UI_Clone/blob/Beta/Screenshots/6.png" width="32%">
