@@ -165,5 +165,4 @@ Special thanks to the Flutter community for their continuous support, guidance, 
 ## Don't forget to ⭐ star the repo if you find it useful!
 
 For any inquiries or questions or feedback about the Netflix App UI Clone project,please contact  
-[📧E-mail](mailto:akshayshinekrishna@gmail.com).
-[Instagram](https://www.instagram.com/_._cybertron._/)
+[📧E-mail](mailto:akshayshinekrishna@gmail.com) [Instagram](https://www.instagram.com/_._cybertron._/)
