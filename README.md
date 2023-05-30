@@ -162,4 +162,4 @@ The Netflix App UI Clone project is inspired by the original Netflix interface. 
 
 Special thanks to the Flutter community for their continuous support, guidance, and contributions to the Flutter framework and ecosystem.
 
-"Don't forget to ⭐ star the repo if you find it useful!"
+## Don't forget to ⭐ star the repo if you find it useful!
