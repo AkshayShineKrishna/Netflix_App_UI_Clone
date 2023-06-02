@@ -82,7 +82,7 @@ flutter pub get
 
 2. In the project directory, create a new file named api_key.dart in the lib\Infrastructure .
 
-3. Open the api_constants.dart file and declare a variable named apiKey:
+3. Open the api_key.dart file and declare a variable named apiKey:
 ```
 const String apiKey = 'YOUR_API_KEY';
 ```
