@@ -43,9 +43,9 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         isLoadingTopTv: true,
         isErrorTopTv: false,
       ));
-      final _result = await _topTvShowsServices.getTopTV();
-      log(_result.toString());
-      _result.fold((MainFailure failure) {
+      final result = await _topTvShowsServices.getTopTV();
+      log(result.toString());
+      result.fold((MainFailure failure) {
         emit(state.copyWith(
           topTvResultList: [],
           isLoadingTopTv: false,
@@ -65,9 +65,9 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       }
       emit(state.copyWith(
           isErrorTopRated: false, isLoadingTopRated: true, topRatedList: []));
-      final _result = await _topRatedServices.getTopRatedMovies();
-      log(_result.toString());
-      _result.fold((failure) {
+      final result = await _topRatedServices.getTopRatedMovies();
+      log(result.toString());
+      result.fold((failure) {
         emit(state.copyWith(
           topRatedList: [],
           isLoadingTopRated: false,
@@ -89,9 +89,9 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
           isLoadingPastYear: true,
           isErrorPastYear: false,
           releasedPastList: []));
-      final _result = await _releasedPastYearServices.getReleasedPastYear();
-      log(_result.toString());
-      _result.fold((failure) {
+      final result = await _releasedPastYearServices.getReleasedPastYear();
+      log(result.toString());
+      result.fold((failure) {
         emit(state.copyWith(
             isLoadingPastYear: false,
             isErrorPastYear: true,
@@ -112,9 +112,9 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       }
       emit(state.copyWith(
           isLoadingAnimData: true, isErrorAnimData: false, animationList: []));
-      final _result = await _animationResponseServices.getAnimationData();
-      log(_result.toString());
-      _result.fold((failure) {
+      final result = await _animationResponseServices.getAnimationData();
+      log(result.toString());
+      result.fold((failure) {
         emit(state.copyWith(
             isLoadingAnimData: false,
             isErrorAnimData: true,
@@ -138,8 +138,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         isErrorImgList: false,
         isLoadingImgList: true,
       ));
-      final _result = await _iDownloadsRepo.getDownloadsImages();
-      _result.fold((failure) {
+      final result = await _iDownloadsRepo.getDownloadsImages();
+      result.fold((failure) {
         emit(state.copyWith(
           mainImgList: null,
           isErrorImgList: true,

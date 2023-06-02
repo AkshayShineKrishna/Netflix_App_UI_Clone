@@ -78,7 +78,7 @@ class VideoListActionsWidget extends StatelessWidget {
           ),
           Text(
             title,
-            style: TextStyle(fontSize: 14),
+            style: const TextStyle(fontSize: 14),
           )
         ],
       ),

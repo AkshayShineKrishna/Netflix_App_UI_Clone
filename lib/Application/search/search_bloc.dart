@@ -36,9 +36,9 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
         isLoading: true,
         isError: false,
       ));
-      final _result = await _downloadsServices.getDownloadsImages();
-      log(_result.toString());
-      _result.fold((MainFailure failure) {
+      final result = await _downloadsServices.getDownloadsImages();
+      log(result.toString());
+      result.fold((MainFailure failure) {
         emit(const SearchState(
             searchResultList: [],
             idleList: [],
@@ -75,9 +75,9 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
         isError: false,
       ));
       //get search result
-      final _result =
+      final result =
           await _searchServices.searchMedia(mediaQuery: event.mediaQuery);
-      _result.fold((MainFailure failure) {
+      result.fold((MainFailure failure) {
         emit(SearchState(
             searchResultList: [],
             idleList: state.idleList,

@@ -30,9 +30,9 @@ class HotAndNewBloc extends Bloc<HotAndNewEvent, HotAndNewState> {
         isLoadingComingSoon: true,
         isErrorComingSoon: false,
       ));
-      final _result = await _comingSoonServices.getUpcoming();
-      log(_result.toString());
-      _result.fold((MainFailure failure) {
+      final result = await _comingSoonServices.getUpcoming();
+      log(result.toString());
+      result.fold((MainFailure failure) {
         emit(state.copyWith(
           comingSoonList: [],
           isLoadingComingSoon: false,
@@ -55,9 +55,9 @@ class HotAndNewBloc extends Bloc<HotAndNewEvent, HotAndNewState> {
         isLoadingPopular: true,
         isErrorPopular: false,
       ));
-      final _result = await _everyonesWatchingServices.getPopular();
-      log(_result.toString());
-      _result.fold((MainFailure failure) {
+      final result = await _everyonesWatchingServices.getPopular();
+      log(result.toString());
+      result.fold((MainFailure failure) {
         emit(state.copyWith(
           popularList: [],
           isLoadingPopular: false,

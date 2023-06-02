@@ -6,5 +6,5 @@ final getIt = GetIt.instance;
 
 @InjectableInit()
 Future<void> configureInjectable() async {
-  await getIt.init(environment: Environment.prod);
+  getIt.init(environment: Environment.prod);
 }

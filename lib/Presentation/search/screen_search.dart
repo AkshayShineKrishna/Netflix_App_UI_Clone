@@ -14,7 +14,7 @@ class ScreenSearch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _debouncer = Debouncer(milliseconds: 1 * 1000);
+    final debouncer = Debouncer(milliseconds: 1 * 1000);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       BlocProvider.of<SearchBloc>(context).add(const Initialize());
     });
@@ -42,7 +42,7 @@ class ScreenSearch extends StatelessWidget {
                 BlocProvider.of<SearchBloc>(context).add(const Initialize());
                 return;
               }
-              _debouncer.run(() {
+              debouncer.run(() {
                 BlocProvider.of<SearchBloc>(context)
                     .add(SearchMedia(mediaQuery: value));
               });
