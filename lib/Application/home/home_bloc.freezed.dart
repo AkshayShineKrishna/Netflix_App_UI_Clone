@@ -23,6 +23,7 @@ mixin _$HomeEvent {
     required TResult Function() getReleasedPastYear,
     required TResult Function() getAnimationData,
     required TResult Function() getMainImage,
+    required TResult Function() getMalayalamMovies,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -32,6 +33,7 @@ mixin _$HomeEvent {
     TResult? Function()? getReleasedPastYear,
     TResult? Function()? getAnimationData,
     TResult? Function()? getMainImage,
+    TResult? Function()? getMalayalamMovies,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -41,6 +43,7 @@ mixin _$HomeEvent {
     TResult Function()? getReleasedPastYear,
     TResult Function()? getAnimationData,
     TResult Function()? getMainImage,
+    TResult Function()? getMalayalamMovies,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -51,6 +54,7 @@ mixin _$HomeEvent {
     required TResult Function(_getReleasedPastYear value) getReleasedPastYear,
     required TResult Function(_getAnimationData value) getAnimationData,
     required TResult Function(_getMainImage value) getMainImage,
+    required TResult Function(_getMalayalamMovies value) getMalayalamMovies,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -60,6 +64,7 @@ mixin _$HomeEvent {
     TResult? Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult? Function(_getAnimationData value)? getAnimationData,
     TResult? Function(_getMainImage value)? getMainImage,
+    TResult? Function(_getMalayalamMovies value)? getMalayalamMovies,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -69,6 +74,7 @@ mixin _$HomeEvent {
     TResult Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult Function(_getAnimationData value)? getAnimationData,
     TResult Function(_getMainImage value)? getMainImage,
+    TResult Function(_getMalayalamMovies value)? getMalayalamMovies,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -134,6 +140,7 @@ class _$_getTopTv implements _getTopTv {
     required TResult Function() getReleasedPastYear,
     required TResult Function() getAnimationData,
     required TResult Function() getMainImage,
+    required TResult Function() getMalayalamMovies,
   }) {
     return getTopTv();
   }
@@ -146,6 +153,7 @@ class _$_getTopTv implements _getTopTv {
     TResult? Function()? getReleasedPastYear,
     TResult? Function()? getAnimationData,
     TResult? Function()? getMainImage,
+    TResult? Function()? getMalayalamMovies,
   }) {
     return getTopTv?.call();
   }
@@ -158,6 +166,7 @@ class _$_getTopTv implements _getTopTv {
     TResult Function()? getReleasedPastYear,
     TResult Function()? getAnimationData,
     TResult Function()? getMainImage,
+    TResult Function()? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getTopTv != null) {
@@ -174,6 +183,7 @@ class _$_getTopTv implements _getTopTv {
     required TResult Function(_getReleasedPastYear value) getReleasedPastYear,
     required TResult Function(_getAnimationData value) getAnimationData,
     required TResult Function(_getMainImage value) getMainImage,
+    required TResult Function(_getMalayalamMovies value) getMalayalamMovies,
   }) {
     return getTopTv(this);
   }
@@ -186,6 +196,7 @@ class _$_getTopTv implements _getTopTv {
     TResult? Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult? Function(_getAnimationData value)? getAnimationData,
     TResult? Function(_getMainImage value)? getMainImage,
+    TResult? Function(_getMalayalamMovies value)? getMalayalamMovies,
   }) {
     return getTopTv?.call(this);
   }
@@ -198,6 +209,7 @@ class _$_getTopTv implements _getTopTv {
     TResult Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult Function(_getAnimationData value)? getAnimationData,
     TResult Function(_getMainImage value)? getMainImage,
+    TResult Function(_getMalayalamMovies value)? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getTopTv != null) {
@@ -254,6 +266,7 @@ class _$_getTopRatedMovies implements _getTopRatedMovies {
     required TResult Function() getReleasedPastYear,
     required TResult Function() getAnimationData,
     required TResult Function() getMainImage,
+    required TResult Function() getMalayalamMovies,
   }) {
     return getTopRatedMovies();
   }
@@ -266,6 +279,7 @@ class _$_getTopRatedMovies implements _getTopRatedMovies {
     TResult? Function()? getReleasedPastYear,
     TResult? Function()? getAnimationData,
     TResult? Function()? getMainImage,
+    TResult? Function()? getMalayalamMovies,
   }) {
     return getTopRatedMovies?.call();
   }
@@ -278,6 +292,7 @@ class _$_getTopRatedMovies implements _getTopRatedMovies {
     TResult Function()? getReleasedPastYear,
     TResult Function()? getAnimationData,
     TResult Function()? getMainImage,
+    TResult Function()? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getTopRatedMovies != null) {
@@ -294,6 +309,7 @@ class _$_getTopRatedMovies implements _getTopRatedMovies {
     required TResult Function(_getReleasedPastYear value) getReleasedPastYear,
     required TResult Function(_getAnimationData value) getAnimationData,
     required TResult Function(_getMainImage value) getMainImage,
+    required TResult Function(_getMalayalamMovies value) getMalayalamMovies,
   }) {
     return getTopRatedMovies(this);
   }
@@ -306,6 +322,7 @@ class _$_getTopRatedMovies implements _getTopRatedMovies {
     TResult? Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult? Function(_getAnimationData value)? getAnimationData,
     TResult? Function(_getMainImage value)? getMainImage,
+    TResult? Function(_getMalayalamMovies value)? getMalayalamMovies,
   }) {
     return getTopRatedMovies?.call(this);
   }
@@ -318,6 +335,7 @@ class _$_getTopRatedMovies implements _getTopRatedMovies {
     TResult Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult Function(_getAnimationData value)? getAnimationData,
     TResult Function(_getMainImage value)? getMainImage,
+    TResult Function(_getMalayalamMovies value)? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getTopRatedMovies != null) {
@@ -374,6 +392,7 @@ class _$_getReleasedPastYear implements _getReleasedPastYear {
     required TResult Function() getReleasedPastYear,
     required TResult Function() getAnimationData,
     required TResult Function() getMainImage,
+    required TResult Function() getMalayalamMovies,
   }) {
     return getReleasedPastYear();
   }
@@ -386,6 +405,7 @@ class _$_getReleasedPastYear implements _getReleasedPastYear {
     TResult? Function()? getReleasedPastYear,
     TResult? Function()? getAnimationData,
     TResult? Function()? getMainImage,
+    TResult? Function()? getMalayalamMovies,
   }) {
     return getReleasedPastYear?.call();
   }
@@ -398,6 +418,7 @@ class _$_getReleasedPastYear implements _getReleasedPastYear {
     TResult Function()? getReleasedPastYear,
     TResult Function()? getAnimationData,
     TResult Function()? getMainImage,
+    TResult Function()? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getReleasedPastYear != null) {
@@ -414,6 +435,7 @@ class _$_getReleasedPastYear implements _getReleasedPastYear {
     required TResult Function(_getReleasedPastYear value) getReleasedPastYear,
     required TResult Function(_getAnimationData value) getAnimationData,
     required TResult Function(_getMainImage value) getMainImage,
+    required TResult Function(_getMalayalamMovies value) getMalayalamMovies,
   }) {
     return getReleasedPastYear(this);
   }
@@ -426,6 +448,7 @@ class _$_getReleasedPastYear implements _getReleasedPastYear {
     TResult? Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult? Function(_getAnimationData value)? getAnimationData,
     TResult? Function(_getMainImage value)? getMainImage,
+    TResult? Function(_getMalayalamMovies value)? getMalayalamMovies,
   }) {
     return getReleasedPastYear?.call(this);
   }
@@ -438,6 +461,7 @@ class _$_getReleasedPastYear implements _getReleasedPastYear {
     TResult Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult Function(_getAnimationData value)? getAnimationData,
     TResult Function(_getMainImage value)? getMainImage,
+    TResult Function(_getMalayalamMovies value)? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getReleasedPastYear != null) {
@@ -494,6 +518,7 @@ class _$_getAnimationData implements _getAnimationData {
     required TResult Function() getReleasedPastYear,
     required TResult Function() getAnimationData,
     required TResult Function() getMainImage,
+    required TResult Function() getMalayalamMovies,
   }) {
     return getAnimationData();
   }
@@ -506,6 +531,7 @@ class _$_getAnimationData implements _getAnimationData {
     TResult? Function()? getReleasedPastYear,
     TResult? Function()? getAnimationData,
     TResult? Function()? getMainImage,
+    TResult? Function()? getMalayalamMovies,
   }) {
     return getAnimationData?.call();
   }
@@ -518,6 +544,7 @@ class _$_getAnimationData implements _getAnimationData {
     TResult Function()? getReleasedPastYear,
     TResult Function()? getAnimationData,
     TResult Function()? getMainImage,
+    TResult Function()? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getAnimationData != null) {
@@ -534,6 +561,7 @@ class _$_getAnimationData implements _getAnimationData {
     required TResult Function(_getReleasedPastYear value) getReleasedPastYear,
     required TResult Function(_getAnimationData value) getAnimationData,
     required TResult Function(_getMainImage value) getMainImage,
+    required TResult Function(_getMalayalamMovies value) getMalayalamMovies,
   }) {
     return getAnimationData(this);
   }
@@ -546,6 +574,7 @@ class _$_getAnimationData implements _getAnimationData {
     TResult? Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult? Function(_getAnimationData value)? getAnimationData,
     TResult? Function(_getMainImage value)? getMainImage,
+    TResult? Function(_getMalayalamMovies value)? getMalayalamMovies,
   }) {
     return getAnimationData?.call(this);
   }
@@ -558,6 +587,7 @@ class _$_getAnimationData implements _getAnimationData {
     TResult Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult Function(_getAnimationData value)? getAnimationData,
     TResult Function(_getMainImage value)? getMainImage,
+    TResult Function(_getMalayalamMovies value)? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getAnimationData != null) {
@@ -614,6 +644,7 @@ class _$_getMainImage implements _getMainImage {
     required TResult Function() getReleasedPastYear,
     required TResult Function() getAnimationData,
     required TResult Function() getMainImage,
+    required TResult Function() getMalayalamMovies,
   }) {
     return getMainImage();
   }
@@ -626,6 +657,7 @@ class _$_getMainImage implements _getMainImage {
     TResult? Function()? getReleasedPastYear,
     TResult? Function()? getAnimationData,
     TResult? Function()? getMainImage,
+    TResult? Function()? getMalayalamMovies,
   }) {
     return getMainImage?.call();
   }
@@ -638,6 +670,7 @@ class _$_getMainImage implements _getMainImage {
     TResult Function()? getReleasedPastYear,
     TResult Function()? getAnimationData,
     TResult Function()? getMainImage,
+    TResult Function()? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getMainImage != null) {
@@ -654,6 +687,7 @@ class _$_getMainImage implements _getMainImage {
     required TResult Function(_getReleasedPastYear value) getReleasedPastYear,
     required TResult Function(_getAnimationData value) getAnimationData,
     required TResult Function(_getMainImage value) getMainImage,
+    required TResult Function(_getMalayalamMovies value) getMalayalamMovies,
   }) {
     return getMainImage(this);
   }
@@ -666,6 +700,7 @@ class _$_getMainImage implements _getMainImage {
     TResult? Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult? Function(_getAnimationData value)? getAnimationData,
     TResult? Function(_getMainImage value)? getMainImage,
+    TResult? Function(_getMalayalamMovies value)? getMalayalamMovies,
   }) {
     return getMainImage?.call(this);
   }
@@ -678,6 +713,7 @@ class _$_getMainImage implements _getMainImage {
     TResult Function(_getReleasedPastYear value)? getReleasedPastYear,
     TResult Function(_getAnimationData value)? getAnimationData,
     TResult Function(_getMainImage value)? getMainImage,
+    TResult Function(_getMalayalamMovies value)? getMalayalamMovies,
     required TResult orElse(),
   }) {
     if (getMainImage != null) {
@@ -692,7 +728,137 @@ abstract class _getMainImage implements HomeEvent {
 }
 
 /// @nodoc
+abstract class _$$_getMalayalamMoviesCopyWith<$Res> {
+  factory _$$_getMalayalamMoviesCopyWith(_$_getMalayalamMovies value,
+          $Res Function(_$_getMalayalamMovies) then) =
+      __$$_getMalayalamMoviesCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_getMalayalamMoviesCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res, _$_getMalayalamMovies>
+    implements _$$_getMalayalamMoviesCopyWith<$Res> {
+  __$$_getMalayalamMoviesCopyWithImpl(
+      _$_getMalayalamMovies _value, $Res Function(_$_getMalayalamMovies) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_getMalayalamMovies implements _getMalayalamMovies {
+  const _$_getMalayalamMovies();
+
+  @override
+  String toString() {
+    return 'HomeEvent.getMalayalamMovies()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_getMalayalamMovies);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() getTopTv,
+    required TResult Function() getTopRatedMovies,
+    required TResult Function() getReleasedPastYear,
+    required TResult Function() getAnimationData,
+    required TResult Function() getMainImage,
+    required TResult Function() getMalayalamMovies,
+  }) {
+    return getMalayalamMovies();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? getTopTv,
+    TResult? Function()? getTopRatedMovies,
+    TResult? Function()? getReleasedPastYear,
+    TResult? Function()? getAnimationData,
+    TResult? Function()? getMainImage,
+    TResult? Function()? getMalayalamMovies,
+  }) {
+    return getMalayalamMovies?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? getTopTv,
+    TResult Function()? getTopRatedMovies,
+    TResult Function()? getReleasedPastYear,
+    TResult Function()? getAnimationData,
+    TResult Function()? getMainImage,
+    TResult Function()? getMalayalamMovies,
+    required TResult orElse(),
+  }) {
+    if (getMalayalamMovies != null) {
+      return getMalayalamMovies();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_getTopTv value) getTopTv,
+    required TResult Function(_getTopRatedMovies value) getTopRatedMovies,
+    required TResult Function(_getReleasedPastYear value) getReleasedPastYear,
+    required TResult Function(_getAnimationData value) getAnimationData,
+    required TResult Function(_getMainImage value) getMainImage,
+    required TResult Function(_getMalayalamMovies value) getMalayalamMovies,
+  }) {
+    return getMalayalamMovies(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_getTopTv value)? getTopTv,
+    TResult? Function(_getTopRatedMovies value)? getTopRatedMovies,
+    TResult? Function(_getReleasedPastYear value)? getReleasedPastYear,
+    TResult? Function(_getAnimationData value)? getAnimationData,
+    TResult? Function(_getMainImage value)? getMainImage,
+    TResult? Function(_getMalayalamMovies value)? getMalayalamMovies,
+  }) {
+    return getMalayalamMovies?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_getTopTv value)? getTopTv,
+    TResult Function(_getTopRatedMovies value)? getTopRatedMovies,
+    TResult Function(_getReleasedPastYear value)? getReleasedPastYear,
+    TResult Function(_getAnimationData value)? getAnimationData,
+    TResult Function(_getMainImage value)? getMainImage,
+    TResult Function(_getMalayalamMovies value)? getMalayalamMovies,
+    required TResult orElse(),
+  }) {
+    if (getMalayalamMovies != null) {
+      return getMalayalamMovies(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _getMalayalamMovies implements HomeEvent {
+  const factory _getMalayalamMovies() = _$_getMalayalamMovies;
+}
+
+/// @nodoc
 mixin _$HomeState {
+  bool get isErrorMalayalam => throw _privateConstructorUsedError;
+  bool get isLoadingMalayalam => throw _privateConstructorUsedError;
+  List<MalayalamMovieResponseData> get malayalamList =>
+      throw _privateConstructorUsedError;
   String? get mainImgList => throw _privateConstructorUsedError;
   List<AnimationResponseData> get animationList =>
       throw _privateConstructorUsedError;
@@ -723,7 +889,10 @@ abstract class $HomeStateCopyWith<$Res> {
       _$HomeStateCopyWithImpl<$Res, HomeState>;
   @useResult
   $Res call(
-      {String? mainImgList,
+      {bool isErrorMalayalam,
+      bool isLoadingMalayalam,
+      List<MalayalamMovieResponseData> malayalamList,
+      String? mainImgList,
       List<AnimationResponseData> animationList,
       List<ReleasedPastYearResult> releasedPastList,
       List<TopRatedResult> topRatedList,
@@ -753,6 +922,9 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? isErrorMalayalam = null,
+    Object? isLoadingMalayalam = null,
+    Object? malayalamList = null,
     Object? mainImgList = freezed,
     Object? animationList = null,
     Object? releasedPastList = null,
@@ -770,6 +942,18 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
     Object? isErrorImgList = null,
   }) {
     return _then(_value.copyWith(
+      isErrorMalayalam: null == isErrorMalayalam
+          ? _value.isErrorMalayalam
+          : isErrorMalayalam // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isLoadingMalayalam: null == isLoadingMalayalam
+          ? _value.isLoadingMalayalam
+          : isLoadingMalayalam // ignore: cast_nullable_to_non_nullable
+              as bool,
+      malayalamList: null == malayalamList
+          ? _value.malayalamList
+          : malayalamList // ignore: cast_nullable_to_non_nullable
+              as List<MalayalamMovieResponseData>,
       mainImgList: freezed == mainImgList
           ? _value.mainImgList
           : mainImgList // ignore: cast_nullable_to_non_nullable
@@ -842,7 +1026,10 @@ abstract class _$$_HomeStateCopyWith<$Res> implements $HomeStateCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {String? mainImgList,
+      {bool isErrorMalayalam,
+      bool isLoadingMalayalam,
+      List<MalayalamMovieResponseData> malayalamList,
+      String? mainImgList,
       List<AnimationResponseData> animationList,
       List<ReleasedPastYearResult> releasedPastList,
       List<TopRatedResult> topRatedList,
@@ -870,6 +1057,9 @@ class __$$_HomeStateCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? isErrorMalayalam = null,
+    Object? isLoadingMalayalam = null,
+    Object? malayalamList = null,
     Object? mainImgList = freezed,
     Object? animationList = null,
     Object? releasedPastList = null,
@@ -887,6 +1077,18 @@ class __$$_HomeStateCopyWithImpl<$Res>
     Object? isErrorImgList = null,
   }) {
     return _then(_$_HomeState(
+      isErrorMalayalam: null == isErrorMalayalam
+          ? _value.isErrorMalayalam
+          : isErrorMalayalam // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isLoadingMalayalam: null == isLoadingMalayalam
+          ? _value.isLoadingMalayalam
+          : isLoadingMalayalam // ignore: cast_nullable_to_non_nullable
+              as bool,
+      malayalamList: null == malayalamList
+          ? _value._malayalamList
+          : malayalamList // ignore: cast_nullable_to_non_nullable
+              as List<MalayalamMovieResponseData>,
       mainImgList: freezed == mainImgList
           ? _value.mainImgList
           : mainImgList // ignore: cast_nullable_to_non_nullable
@@ -955,7 +1157,10 @@ class __$$_HomeStateCopyWithImpl<$Res>
 
 class _$_HomeState implements _HomeState {
   const _$_HomeState(
-      {required this.mainImgList,
+      {required this.isErrorMalayalam,
+      required this.isLoadingMalayalam,
+      required final List<MalayalamMovieResponseData> malayalamList,
+      required this.mainImgList,
       required final List<AnimationResponseData> animationList,
       required final List<ReleasedPastYearResult> releasedPastList,
       required final List<TopRatedResult> topRatedList,
@@ -970,10 +1175,23 @@ class _$_HomeState implements _HomeState {
       required this.isErrorAnimData,
       required this.isLoadingImgList,
       required this.isErrorImgList})
-      : _animationList = animationList,
+      : _malayalamList = malayalamList,
+        _animationList = animationList,
         _releasedPastList = releasedPastList,
         _topRatedList = topRatedList,
         _topTvResultList = topTvResultList;
+
+  @override
+  final bool isErrorMalayalam;
+  @override
+  final bool isLoadingMalayalam;
+  final List<MalayalamMovieResponseData> _malayalamList;
+  @override
+  List<MalayalamMovieResponseData> get malayalamList {
+    if (_malayalamList is EqualUnmodifiableListView) return _malayalamList;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_malayalamList);
+  }
 
   @override
   final String? mainImgList;
@@ -1033,7 +1251,7 @@ class _$_HomeState implements _HomeState {
 
   @override
   String toString() {
-    return 'HomeState(mainImgList: $mainImgList, animationList: $animationList, releasedPastList: $releasedPastList, topRatedList: $topRatedList, topTvResultList: $topTvResultList, isLoadingTopRated: $isLoadingTopRated, isErrorTopRated: $isErrorTopRated, isLoadingTopTv: $isLoadingTopTv, isErrorTopTv: $isErrorTopTv, isErrorPastYear: $isErrorPastYear, isLoadingPastYear: $isLoadingPastYear, isLoadingAnimData: $isLoadingAnimData, isErrorAnimData: $isErrorAnimData, isLoadingImgList: $isLoadingImgList, isErrorImgList: $isErrorImgList)';
+    return 'HomeState(isErrorMalayalam: $isErrorMalayalam, isLoadingMalayalam: $isLoadingMalayalam, malayalamList: $malayalamList, mainImgList: $mainImgList, animationList: $animationList, releasedPastList: $releasedPastList, topRatedList: $topRatedList, topTvResultList: $topTvResultList, isLoadingTopRated: $isLoadingTopRated, isErrorTopRated: $isErrorTopRated, isLoadingTopTv: $isLoadingTopTv, isErrorTopTv: $isErrorTopTv, isErrorPastYear: $isErrorPastYear, isLoadingPastYear: $isLoadingPastYear, isLoadingAnimData: $isLoadingAnimData, isErrorAnimData: $isErrorAnimData, isLoadingImgList: $isLoadingImgList, isErrorImgList: $isErrorImgList)';
   }
 
   @override
@@ -1041,6 +1259,12 @@ class _$_HomeState implements _HomeState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_HomeState &&
+            (identical(other.isErrorMalayalam, isErrorMalayalam) ||
+                other.isErrorMalayalam == isErrorMalayalam) &&
+            (identical(other.isLoadingMalayalam, isLoadingMalayalam) ||
+                other.isLoadingMalayalam == isLoadingMalayalam) &&
+            const DeepCollectionEquality()
+                .equals(other._malayalamList, _malayalamList) &&
             (identical(other.mainImgList, mainImgList) ||
                 other.mainImgList == mainImgList) &&
             const DeepCollectionEquality()
@@ -1076,6 +1300,9 @@ class _$_HomeState implements _HomeState {
   @override
   int get hashCode => Object.hash(
       runtimeType,
+      isErrorMalayalam,
+      isLoadingMalayalam,
+      const DeepCollectionEquality().hash(_malayalamList),
       mainImgList,
       const DeepCollectionEquality().hash(_animationList),
       const DeepCollectionEquality().hash(_releasedPastList),
@@ -1101,7 +1328,10 @@ class _$_HomeState implements _HomeState {
 
 abstract class _HomeState implements HomeState {
   const factory _HomeState(
-      {required final String? mainImgList,
+      {required final bool isErrorMalayalam,
+      required final bool isLoadingMalayalam,
+      required final List<MalayalamMovieResponseData> malayalamList,
+      required final String? mainImgList,
       required final List<AnimationResponseData> animationList,
       required final List<ReleasedPastYearResult> releasedPastList,
       required final List<TopRatedResult> topRatedList,
@@ -1117,6 +1347,12 @@ abstract class _HomeState implements HomeState {
       required final bool isLoadingImgList,
       required final bool isErrorImgList}) = _$_HomeState;
 
+  @override
+  bool get isErrorMalayalam;
+  @override
+  bool get isLoadingMalayalam;
+  @override
+  List<MalayalamMovieResponseData> get malayalamList;
   @override
   String? get mainImgList;
   @override

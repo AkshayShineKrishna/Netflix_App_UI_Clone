@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'package:netflix/Core/constants.dart';
 import 'package:netflix/Presentation/Home/widgets/main_movie_card_widget.dart';
 import 'package:netflix/Presentation/Home/widgets/posterList/PastYearWidget.dart';
 import 'package:netflix/Presentation/Home/widgets/posterList/TopRatedWidget.dart';
 import 'package:netflix/Presentation/Home/widgets/posterList/animation_widget.dart';
+import 'package:netflix/Presentation/Home/widgets/posterList/malayalam_posters_widget.dart';
 
 import '../../Application/home/home_bloc.dart';
 import 'widgets/background_card.dart';
@@ -28,6 +28,8 @@ class ScreenHome extends StatelessWidget {
           .add(const HomeEvent.getReleasedPastYear());
       BlocProvider.of<HomeBloc>(context)
           .add(const HomeEvent.getAnimationData());
+      BlocProvider.of<HomeBloc>(context)
+          .add(const HomeEvent.getMalayalamMovies());
     });
     final size = MediaQuery.of(context).size;
     return Scaffold(
@@ -72,8 +74,8 @@ class ScreenHome extends StatelessWidget {
                           ),
                           kHeight,
                           MainMovieCardWidget(
-                            title: 'South Indian Cinemas',
-                            posterType: TopRatedWidgetPosters(),
+                            title: 'Malayalam Movies',
+                            posterType: MalayalamMoviePostersWidget(),
                           ),
                           kHeight,
                         ],

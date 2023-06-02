@@ -4,7 +4,9 @@ import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:netflix/Domain/Home/animation_response_services.dart';
+import 'package:netflix/Domain/Home/malayalam_movie_response_services.dart';
 import 'package:netflix/Domain/Home/model/animation_response/animation_response.dart';
+import 'package:netflix/Domain/Home/model/malayalam_movie_response/malayalam_movie_response.dart';
 import 'package:netflix/Domain/Home/model/release_past_year/released_past_year.dart';
 import 'package:netflix/Domain/Home/model/top_rated_movies/top_rated_movies.dart';
 import 'package:netflix/Domain/Home/top_rated_services.dart';
@@ -26,12 +28,14 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   final TopRatedServices _topRatedServices;
   final ReleasedPastYearServices _releasedPastYearServices;
   final AnimationResponseServices _animationResponseServices;
+  final MalayalamMovieService _malayalamMovieService;
   HomeBloc(
       this._topTvShowsServices,
       this._topRatedServices,
       this._releasedPastYearServices,
       this._animationResponseServices,
-      this._iDownloadsRepo)
+      this._iDownloadsRepo,
+      this._malayalamMovieService)
       : super(HomeState.initial()) {
     on<_getTopTv>((event, emit) async {
       if (state.topTvResultList.isNotEmpty) {
@@ -153,6 +157,33 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
           mainImgList: movie,
           isErrorImgList: false,
           isLoadingImgList: false,
+        ));
+      });
+    });
+    on<_getMalayalamMovies>((event, emit) async {
+      if (state.malayalamList.isNotEmpty) {
+        emit(state);
+        return;
+      }
+      emit(state.copyWith(
+        malayalamList: [],
+        isErrorMalayalam: false,
+        isLoadingMalayalam: true,
+      ));
+      final result = await _malayalamMovieService.getMalayalamMovies();
+      result.fold((failure) {
+        emit(state.copyWith(
+          malayalamList: [],
+          isErrorMalayalam: true,
+          isLoadingImgList: false,
+        ));
+      }, (success) {
+        final movieList = success.results;
+        movieList.shuffle();
+        emit(state.copyWith(
+          malayalamList: movieList,
+          isErrorMalayalam: false,
+          isLoadingMalayalam: false,
         ));
       });
     });

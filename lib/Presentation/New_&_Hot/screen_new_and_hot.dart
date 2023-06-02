@@ -108,7 +108,7 @@ class ComingSoonListViewWidget extends StatelessWidget {
           );
         }
         final filteredList = state.comingSoonList
-            .where((movie) => movie.logoPath != 'null')
+            .where((movie) => movie.logoPath != 'null' && movie.key != null)
             .toList();
         return ListView.separated(
             itemBuilder: (ctx, index) {

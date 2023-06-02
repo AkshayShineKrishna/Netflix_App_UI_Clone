@@ -3,6 +3,9 @@ part of 'home_bloc.dart';
 @freezed
 class HomeState with _$HomeState {
   const factory HomeState({
+    required bool isErrorMalayalam,
+    required bool isLoadingMalayalam,
+    required List<MalayalamMovieResponseData> malayalamList,
     required String? mainImgList,
     required List<AnimationResponseData> animationList,
     required List<ReleasedPastYearResult> releasedPastList,
@@ -36,5 +39,8 @@ class HomeState with _$HomeState {
         mainImgList: null,
         isErrorImgList: false,
         isLoadingImgList: false,
+        isErrorMalayalam: false,
+        isLoadingMalayalam: false,
+        malayalamList: [],
       );
 }
