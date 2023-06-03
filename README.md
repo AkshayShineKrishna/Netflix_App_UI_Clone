@@ -16,7 +16,7 @@ Please note that this repository is intended for educational and personal use, a
 - 🐍 Python: a versatile programming language used for backend development.
 - 🌐 Flask: a lightweight web framework in Python used to create the API endpoints and handle requests.
 - 🎥 TMDB API: the primary source of data for movie and TV show information.
-- 🚀 Custom Python API: a custom-built API in Python that combines and processes the results of the TMDB APIs, providing additional functionality not directly available from TMDB.
+- 🚀 Custom Python API: a [custom-built API](https://github.com/AkshayShineKrishna/Tmdb_Movie_Fetcher) in Python that combines and processes the results of the TMDB APIs, providing additional functionality not directly available from TMDB.
 - 🗂️ Git: version control system for tracking changes and collaborating with others.
 - 🌐 GitHub: hosting platform for managing and sharing the repository.
 
@@ -139,7 +139,7 @@ This command will build and run the app on your connected device or emulator.
 
 📱 **Limited Device Testing**: The app has been tested on a limited number of physical devices, so there may be variations in performance and compatibility across different devices.
 
-🔌 **Custom API Limitations**: The current custom API used in the project supports a limited number of users. If you encounter any issues related to data retrieval or connectivity, it may be due to the limitations of the custom API.
+🔌 **Custom API Limitations**: The current [custom API](https://github.com/AkshayShineKrishna/Tmdb_Movie_Fetcher) used in the project supports a limited number of users. If you encounter any issues related to data retrieval or connectivity, it may be due to the limitations of the custom API.
 
 📏 **Screen Variations**: Due to variations in device screen sizes and aspect ratios, there might be instances of pixel overflow or layout issues in certain devices.
 
